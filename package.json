@@ -1,0 +1,12 @@
+{
+  "name": "about-monorepa-module-federation",
+  "version": "1.0.0",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm run start -w admin\" \"npm run start -w shop\" \"npm run start -w host\""    
+  }
+}
